@@ -1,0 +1,323 @@
+*,
+*:after,
+*:before {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FFFFFA;
+}
+
+h1 {
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.topo {
+    min-height: 80px;
+    display: flex;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    align-items: flex-start; 
+    justify-content: space-between;
+    background-color: #38C2B3;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.options ul li {
+    color: #fff;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.options ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 12px;
+    border: 2px transparent solid;
+    font-size: 14px;
+}
+
+.options ul li a:hover, 
+.options ul li a.active {
+    border-radius: 5px;
+    border: 2px #fff solid;
+}
+
+.topo .menu-icon {
+    display: none;
+}
+
+.topo .menu-icon img {
+    cursor: pointer;
+}
+
+.topo-destaque {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    height: 475px;
+    background-image: url("../imagens/imag_inicio.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.topo-destaque .info {
+    background-color: #38C2B3;
+    color: #fff;
+    width: 357px;
+    min-height: 131px;
+    margin: 50px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 20px;
+    padding-bottom: 25px;
+}
+
+.topo-destaque .info h1 {
+    margin-bottom: 5px;
+} 
+
+.topo-destaque .info p {
+    text-align: left;
+    font-size: 14px;
+}
+
+.cursos .destaques {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cursos .destaques img { 
+    width: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-top: 20px; 
+}
+
+main .pesquisa input {
+    width: 100%;
+    height: 50px;
+    border: 9px solid #FFFFFF;
+    background-color: #FFFFFF;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    margin-right: 0px;
+    margin-left: 0px;
+    box-shadow: 0px 1px 4px 0.25px rgba(94,94,79,0.3);
+
+    /* Imagem do BG */
+    background-image: url("../imagens/busca.png");
+    background-repeat: no-repeat;
+    background-position-x: 10px;
+    background-position-y: center;
+
+    padding-left: 40px;
+    color: #494747;
+}
+
+main .pesquisa {
+    width: 95%; 
+    max-width: 822px; 
+}
+
+main .cursos {
+    width: 95%; 
+    max-width: 822px; 
+}
+
+main .cursos h1 {
+    margin-bottom: 20px;
+    color: #494747;
+}
+
+main .cursos .destaques .curso {
+    border: 1px solid #e5e5e5;
+    padding: 10px;
+}
+
+main .cursos .destaques .curso .info {
+    margin:10px;
+}
+
+main .cursos .destaques .curso h2 {
+    color: #494747;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+main .cursos .destaques .curso span {
+    color: #9A9696;
+    line-height: 120%;
+    font-size: 15px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
+
+footer .info {
+    color: #665E5E;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+/* Página de contato */
+main .contato {
+    width: 95%; 
+    max-width: 822px; 
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+main .contato .form-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+main .contato .form-group input,
+main .contato .form-group select,
+main .contato .form-group textarea {
+    display: block;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #494747;
+    height: 45px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+main .contato .form-group label {
+    display: block;
+    margin-top: 10px;
+}
+
+main .contato .form-group input[type="radio"]{ 
+    height: 15px;
+}
+
+main .contato .form-group input[type="radio"]{ 
+    display: inline;
+}
+
+main .contato .form-group .input-group span {
+    padding-left: 5px;
+}
+
+
+main .contato .info {
+    border: 9px solid #FFFFFF;
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 4px 0.25px rgba(94,94,79,0.3);
+
+    margin-bottom: 25px;
+    padding: 15px;
+}
+
+main .contato .info h1 {
+    color: #494747;
+    margin-bottom: 10px;
+}
+
+main .contato .info label {
+    font-size: 12px;
+    color: #9A9696;
+}
+
+main .contato .info #idade {
+    width: 80px;
+}
+
+main .contato .info .form-group .input-group  {
+    width: 100%;
+}
+
+main .contato .info .form-group .block-right {
+    width: 80px;
+    margin-left: 15px;
+}
+
+main .contato .info .form-group .block-estado {
+    width: 150px;
+    margin-left: 15px;
+}
+
+main .contato .info .form-group .block-cidade {
+    width: 200px;
+    margin-left: 15px;
+}
+
+main .contato .info #nome {
+    width: 100%;
+}
+
+main .contato .info #email {
+    width: 100%;
+}
+
+main .contato .info #assunto {
+    width: 100%;
+}
+
+main .contato .info #mensagem {
+    width: 100%;
+    height: 150px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+main .contato .buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+main .contato .buttons button {
+    background-color: #38C2B3;
+    color: #fff;
+    font-size: 15px;
+    text-align: center;
+    width: 110px;
+    padding: 10px;
+    border: 0px;
+    cursor: pointer;
+}
+
+main .contato .buttons button:hover {
+    background-color: #279888;
+}
+
+main .contato .form-group .contador {
+    width: 100%;
+    text-align: right;
+    font-size: 12px;
+    color: #9A9696;
+}
+
+
+
+
+

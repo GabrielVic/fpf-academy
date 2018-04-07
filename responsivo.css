@@ -1,0 +1,40 @@
+@media (max-width: 900px){
+    .options ul {
+        display: none;
+    }
+
+    .topo .menu-icon {
+        display: inline;
+    }
+
+    .topo .menu-icon #botao-menu {
+        margin-top: 10px;
+    }
+
+    .topo-expandido {
+        height: 100%;
+    }
+
+    .topo-expandido .options .menu-icon {
+        display: inline;
+        text-align: right;
+        bottom: 20px;
+    }
+
+    .topo-expandido .options .itens ul {
+        display: inline;
+    }
+
+    .topo-expandido .options .itens ul li {
+        display: block;
+        text-align: right;
+        padding-top: 10px;
+        line-height: 200%;
+    }
+
+    .cursos .destaques {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Academy</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/estilos.css">
+    <link rel="stylesheet" href="assets/css/responsivo.css">
+</head>
+
+<body>
+    <!-- Menu de navegação principal -->
+    <nav class="topo">
+        <div class="logo">
+            <img src="assets/imagens/academylogo_branco.png">
+        </div>
+        <div class="options">
+            <div class="menu-icon">
+                <input id="botao-menu" type="image" src="assets/imagens/menu.png" title="Clique para visualizar o menu">
+            </div>
+            <div class="itens">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="#">Cursos</a></li>
+                    <li><a href="#">Centro de Certificação</a></li>
+                    <li><a href="evento.html">Academy Day</a></li>
+                    <li><a href="contato.html" class="active">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Seção principal -->
+    <main>
+        <section class="contato">
+            <form action="http://academy.franco.eti.br/exemplos/php/enviar1.php" method="post">
+                <div class="info">
+                    <h1>Informações pessoais</h1>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <label>Nome completo</label>
+                            <input type="text" name="nome" id="nome" required maxlength="255">
+                        </div>
+                        <div class="input-group block-right">
+                            <label>Idade</label>
+                            <input type="number" name="idade" id="idade" required min="0" max="999">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <label>Sexo</label>
+                            <input type="radio" name="sexo" id="sexo1" value="M"> <span>Masculino</span>
+                            <input type="radio" name="sexo" id="sexo2" value="F"> <span>Feminino</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="info">
+                    <h1>Informações de contato</h1>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <label>E-mail</label>
+                            <input type="email" name="email" id="email" required maxlength="255">
+                        </div>
+                        <div class="input-group block-estado">
+                            <label>Estado</label>
+                            <select name="estado" id="estado" required>
+                                <option value="AM">Amazonas</option>
+                                <option value="AC">Acre</option>
+                                <option value="AP">Amapá</option>
+                                <option value="RR">Roraima</option>
+                                <option value="RO">Rondönia</option>
+                            </select>
+                        </div>
+                        <div class="input-group block-cidade">
+                            <label>Cidade</label>
+                            <input type="text" name="cidade" id="cidade" required maxlength="255">
+                        </div>
+                    </div>
+                </div>
+                <div class="info">
+                    <h1>Informações da mensagem</h1>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <label>Assunto</label>
+                            <input type="text" name="assunto" id="assunto" required maxlength="255">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <label>Mensagem</label>
+                            <textarea name="mensagem" id="mensagem" required></textarea>
+                            <div class="contador">
+                                <span id="total_letras">0</span><span>/ 280</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <img src="assets/imagens/academy_rodape.png" title="Logo Academy">
+        </div>
+        <div class="info">
+            &copy; 2017. Todos os direitos reservados.
+        </div>
+    </footer>
+
+    <script src="assets/js/jquery-3.2.0.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+</body>
+
+</html>
